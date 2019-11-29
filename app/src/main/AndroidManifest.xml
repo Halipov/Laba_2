@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hes.fit.bstu.laba_2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="LabaOOP"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Recycle_View"
+            android:label="@string/title_activity_recycle__view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Current_person" />
+        <activity android:name=".educationmanager.Manager_display" />
+        <activity android:name=".manual_registration.Rgstr_3" />
+        <activity android:name=".manual_registration.Rgstr_2" />
+        <activity android:name=".manual_registration.Rgstr_1" />
+        <activity android:name=".educationmanager.ManagerActivity" />
+        <activity android:name=".StudentActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

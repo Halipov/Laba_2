@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="10dp"
+    tools:context=".manual_registration.Rgstr_3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_relative1"
+            android:background="@drawable/background_forms">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/image_photo"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name_cur"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:id="@+id/text_fn"
+                android:layout_below="@id/image_photo"
+                android:layout_centerHorizontal="true"
+
+                />
+            <TextView
+                android:id="@+id/text_date_of_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_of_birth"
+                android:textSize="25sp"
+                android:layout_marginTop="30sp"
+                android:layout_below="@id/text_fn"
+                />
+            <TextView
+                android:id="@+id/text_mn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_date_of_birth"
+                android:text="@string/email"
+                android:textSize="25sp"
+
+                />
+            <TextView
+                android:id="@+id/text_sn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_mn"
+                android:text="@string/phone_number"
+                android:textSize="25sp"
+
+                />
+            <TextView
+                android:id="@+id/text_organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sn"
+                android:text="@string/organization"
+                android:textSize="25sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:text="@string/status"
+                android:layout_below="@id/text_organization"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/course"
+                android:text="@string/course"
+                android:layout_below="@id/status"
+                android:textSize="25sp"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+        <Button
+            android:id="@+id/rgs_btn_manual_back_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="btn_back"
+            android:paddingHorizontal="45dp"
+            android:paddingVertical="10dp"
+            android:text="@string/back"
+            android:textAllCaps="true"
+            android:textSize="22sp" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">DesignForLabs</string>
+    <string name="student">Student</string>
+    <string name="logo">logo</string>
+    <string name="manager">Manager</string>
+    <string name="make_your_choice">Make your choice</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter">Enter</string>
+    <string name="back">Back</string>
+    <string name="manual_registration">Manual Registration</string>
+    <string name="generate">Generate</string>
+    <string name="register">Register</string>
+    <string name="generate_from_json">Generate from JSON</string>
+    <string name="generate_from_sqlite">Generate from SQLite</string>
+    <string name="next">Next</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="surname">SurName</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="city">City</string>
+    <string name="phone_number">Phone number</string>
+    <string name="organization">Organization</string>
+    <string name="listener">Listener</string>
+    <string name="full_name">Full Name</string>
+    <string name="title_activity_rgstr_1">Rgstr_1</string>
+    <string name="full_name_cur">Full name</string>
+    <string name="status">Status:</string>
+    <string name="java">Java</string>
+    <string name="c">C#</string>
+    <string name="ruby">Ruby</string>
+    <string name="course">Course</string>
+    <string name="email">Email</string>
+    <string name="display">Display</string>
+    <string name="title_activity_display">Display</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_current">Current</string>
+    <string name="view">View</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="relative_layout">Relative_layout</string>
+    <string name="recycle_view">Recycle_View</string>
+    <string name="card_view">Card_View</string>
+    <string name="fragments">Fragments</string>
+    <string name="title_activity_recylce_view">RecylceView</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_recycle__view">Recycle_View</string>
+</resources>

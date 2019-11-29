@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="10dp"
+    tools:context=".manual_registration.Rgstr_2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_relative"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_relative2"
+            android:background="@drawable/background_forms">
+            <EditText
+                android:id="@+id/edit_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_date_of_birth"
+                android:autofillHints=" "
+                android:inputType="date"
+                android:textSize="@dimen/in_sp" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_mn"
+                android:autofillHints=" "
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/in_sp" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sn"
+                android:autofillHints=" "
+                android:inputType="phone"
+                android:labelFor="@id/edit_fn"
+                android:textSize="@dimen/in_sp" />
+
+            <EditText
+                android:id="@+id/edit_organization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_organization"
+                android:autofillHints=" "
+                android:inputType="text"
+                android:labelFor="@id/edit_fn"
+                android:textSize="@dimen/in_sp" />
+
+
+            <TextView
+                android:id="@+id/text_sn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_email"
+                android:text="@string/phone_number"
+                android:textSize="@dimen/in_sp"
+
+                />
+
+            <TextView
+                android:id="@+id/text_mn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="@dimen/in_sp"
+
+                />
+
+            <TextView
+                android:id="@+id/text_organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_phone"
+                android:text="@string/organization"
+                android:textSize="@dimen/in_sp"
+
+                />
+
+            <TextView
+                android:id="@+id/text_date_of_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_of_birth"
+                android:textSize="@dimen/in_sp"
+                android:layout_below="@id/edit_organization"
+
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rgs_radios"
+                android:orientation="horizontal"
+                android:layout_below="@id/edit_date"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb_student"
+                    android:text="@string/student"
+                    android:textSize="22sp"
+                    android:onClick="onRadioButtonClicked"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb_listener"
+                    android:text="@string/listener"
+                    android:textSize="22sp"
+                    android:onClick="onRadioButtonClicked"
+
+                    />
+            </RadioGroup>
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/background_forms"
+                >
+                <TextView
+                    android:id="@+id/text_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose your course"
+                    android:textSize="30sp"
+                    />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rgs_radios1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_below="@id/text_choose"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_java"
+                        android:text="@string/java"
+                        android:textSize="22sp"
+                        android:onClick="onRadioButtonClicked"
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_cs"
+                        android:text="@string/c"
+                        android:textSize="22sp"
+                        android:onClick="onRadioButtonClicked"
+
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_ruby"
+                        android:text="@string/ruby"
+                        android:textSize="22sp"
+                        android:onClick="onRadioButtonClicked"
+
+                        />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_relative"
+        >
+
+        <Button
+            android:id="@+id/rgs_btn_manual_back_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:onClick="btn_back"
+            android:paddingHorizontal="45dp"
+            android:paddingVertical="10dp"
+            android:text="@string/back"
+            android:textAllCaps="true"
+            android:textSize="22sp" />
+
+
+        <Button
+            android:id="@+id/rgs_btn_manual_next_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:onClick="btn_next"
+            android:paddingHorizontal="45dp"
+            android:paddingVertical="10dp"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
