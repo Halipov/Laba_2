@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import hes.fit.bstu.laba_2.R;
-import hes.fit.bstu.laba_2.Recycle_View;
 
 public class ManagerActivity extends AppCompatActivity {
 
@@ -37,7 +36,7 @@ public class ManagerActivity extends AppCompatActivity {
     }
 
     public void btn_recycle_view(View view) {
-        Intent intent = new Intent(this, Recycle_View.class);
-        startActivity(intent);
+       // Intent intent = new Intent(this, Recycle_View.class);
+        // startActivity(intent);
     }
 }
