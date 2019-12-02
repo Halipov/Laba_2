@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="hes.fit.bstu.laba_2">
 
     <application
@@ -8,7 +9,9 @@
         android:label="LabaOOP"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".RecycleView"></activity>
         <activity android:name=".Current_person" />
         <activity android:name=".educationmanager.Manager_display" />
         <activity android:name=".manual_registration.Rgstr_3" />

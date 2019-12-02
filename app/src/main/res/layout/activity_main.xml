@@ -3,13 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingLeft="20sp"
     android:background="@drawable/gradient"
-    android:paddingRight="20sp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:layout_width="match_parent">
 
 
     <ImageView

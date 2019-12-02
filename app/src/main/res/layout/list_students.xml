@@ -1,33 +1,53 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:padding="16dp">
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/flag"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp"
-        android:src="@mipmap/ic_launcher"
-        android:layout_width="70dp"
-        android:layout_height="50dp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        >
 
-    <LinearLayout
+
+    <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/flag"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="60dp"
+            android:layout_centerVertical="true"
+            android:layout_height="60dp" />
         <TextView
             android:id="@+id/Full_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/last_name" />
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/flag"
+            android:layout_alignParentTop="true"
+            android:textSize="20dp"
+            android:text="@string/full_name" />
 
         <TextView
+            android:layout_below="@id/Full_name"
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/flag"
             android:text="@string/email" />
 
-    </LinearLayout>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>

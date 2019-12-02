@@ -22,6 +22,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
+import com.mikepenz.materialdrawer.Drawer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -160,6 +161,7 @@ public class Manager_display extends AppCompatActivity {
 
         adapter = new StudentAdapter(this, R.layout.list_students, userNames);
         listView.setAdapter(adapter);
+        listView.setBackground(null);
         cursor.close();
         database.close();
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
